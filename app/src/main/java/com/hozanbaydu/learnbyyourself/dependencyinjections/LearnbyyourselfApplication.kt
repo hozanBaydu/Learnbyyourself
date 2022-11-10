@@ -1,4 +1,9 @@
 package com.hozanbaydu.learnbyyourself.dependencyinjections
 
-class LearnbyyourselfApplication {
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+
+@HiltAndroidApp
+class LearnbyyourselfApplication:Application() {
 }
