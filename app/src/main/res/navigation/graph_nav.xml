@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/graph_nav">
+    android:id="@+id/graph_nav"
+    app:startDestination="@id/wordFragment">
 
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.hozanbaydu.learnbyyourself.views.WordFragment"
+        android:label="WordFragment" >
+        <action
+            android:id="@+id/action_wordFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment" />
+        <action
+            android:id="@+id/action_wordFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choiceFragment"
+        android:name="com.hozanbaydu.learnbyyourself.views.ChoiceFragment"
+        android:label="ChoiceFragment" >
+        <action
+            android:id="@+id/action_choiceFragment_to_apiFragment"
+            app:destination="@id/apiFragment" />
+        <action
+            android:id="@+id/action_choiceFragment_to_drawingFragment"
+            app:destination="@id/drawingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/apiFragment"
+        android:name="com.hozanbaydu.learnbyyourself.views.ApiFragment"
+        android:label="ApiFragment" >
+        <action
+            android:id="@+id/action_apiFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawingFragment"
+        android:name="com.hozanbaydu.learnbyyourself.views.DrawingFragment"
+        android:label="DrawingFragment" >
+        <action
+            android:id="@+id/action_drawingFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.hozanbaydu.learnbyyourself.views.DetailsFragment"
+        android:label="DetailsFragment" >
+        <action
+            android:id="@+id/action_detailsFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+    </fragment>
 </navigation>
