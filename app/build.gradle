@@ -101,6 +101,9 @@ dependencies {
         exclude group : "org.checkerframework", module : "checker"
     }
 
+
+    implementation "com.github.Miihir79:DrawingCanvas:1.1.2"
+
 }
 kapt {
     correctErrorTypes true
