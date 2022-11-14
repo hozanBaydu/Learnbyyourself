@@ -31,6 +31,9 @@
         android:name="com.hozanbaydu.learnbyyourself.views.ApiFragment"
         android:label="ApiFragment" >
         <action
+            android:id="@+id/action_apiFragment_to_imageFragment"
+            app:destination="@id/imageFragment" />
+        <action
             android:id="@+id/action_apiFragment_to_wordFragment"
             app:destination="@id/wordFragment" />
     </fragment>
@@ -48,6 +51,14 @@
         android:label="DetailsFragment" >
         <action
             android:id="@+id/action_detailsFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.hozanbaydu.learnbyyourself.views.ImageFragment"
+        android:label="ImageFragment" >
+        <action
+            android:id="@+id/action_imageFragment_to_wordFragment"
             app:destination="@id/wordFragment" />
     </fragment>
 </navigation>
