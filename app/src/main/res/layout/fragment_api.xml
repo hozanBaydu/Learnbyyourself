@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/apiImageview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/imageviewapi" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/apiWordTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -30,10 +30,10 @@
         android:hint="Kelime girin"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/apiImageview" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/apiSentenceTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -44,17 +44,17 @@
         android:hint="Cümle girin"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/apiWordTextview" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/apiSaveButton"
         android:background="@drawable/buttonapikaydet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/apiSentenceTextview"
         app:srcCompat="@drawable/buttonapikaydet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
