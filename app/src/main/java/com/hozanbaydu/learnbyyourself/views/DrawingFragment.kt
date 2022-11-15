@@ -38,6 +38,9 @@ class DrawingFragment:Fragment(R.layout.fragment_drawing){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        Toast.makeText(requireContext(),"Lütfen resim çizdikten sonra yukarıdaki butondan kaydettikten sonra kelimeyi kaydedin",Toast.LENGTH_LONG).show()
+
+
         wordViewModel = ViewModelProvider(requireActivity()).get(WordViewModel::class.java)
 
         val binding = FragmentDrawingBinding.bind(view)
