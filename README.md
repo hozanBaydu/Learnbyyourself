@@ -6,15 +6,15 @@ Merhaba,bu uygulamayı kotlin ile Google'nin önerdiği son teknolojiler ile kod
 
 ## Özellikler
 
-- Kullanıcılar dil öğrenmek için istediği sayıda kelime kaydedebilir.
-- Kelimelerin anımsanması için her kelime için bir resim çizebilir.
+- Kullanıcılar dil öğrenmek için istediği sayıda kelime kaydedilebilir.
+- Kelimelerin anımsanması için her kelime için bir resim çizilebilir.
 - İnternetten aratılan kelimeye göre 3 milyon fotoğraf arasında seçim yapılabilir.
-- Ana ekranda kaydedilen kelimeye tıklayarak kelimenin ayrıntıları görülebilir.
+- Ana ekranda kaydedilen kelimeye tıklayarak kelimenin ayrıntıları görülebilmektedir.
 
 
 ### Giriş sayfası
 
-Kullanıcılar bu sayfada önceden kaydettikleri kelimeleri recyclerview içinde görebilecek.
+Kullanıcılar bu sayfada önceden kaydettikleri kelimeleri recyclerview içinde görebilecektir.
 
 ![giriş sayfası](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK-1jxsWf2uvujj3Cv2RQm08AovBuCOjtPmNcsUX1wndUqdMPGa4KCihxTO6MVv6Mn0BBJFD1bJ8lLec7jmEB2SfGQz0D3EhNONYx4n-Vmfy0XxSxxYy13su7M1Mqj-8SwAfJOBDlASnNtUAlYolCIQgJGEtnDGQD1BfFu4L5egdd7OpG8Sv2-AdtT/s600/learn6.jpeg)
 
