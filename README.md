@@ -207,6 +207,6 @@ Uygulamayı yazan:Hozan BAYDU
 
 Tasarım:Adobexd,Canva
 
-Tarih:20.08.2022
+Tarih:20.10.2022
 
 iletişim:hozan.baydu3447@gmail.com
