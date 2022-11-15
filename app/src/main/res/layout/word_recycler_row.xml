@@ -6,28 +6,46 @@
     android:layout_height="wrap_content"
     android:background="@color/teal_700">
 
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/wordrecycler" />
 
-    <ImageView
-        android:id="@+id/wordImageview"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:scaleType="fitCenter"
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
+        android:id="@+id/cardview"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/wordimage" />
+        android:padding="1dp"
+        android:shadowRadius="@integer/material_motion_duration_short_1"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="@dimen/cardview_default_radius"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/cardview_default_radius"
+
+        >
+
+        <ImageView
+            android:id="@+id/wordImageview"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            android:padding="5dp" />
+    </androidx.cardview.widget.CardView>
+
 
     <TextView
         android:id="@+id/wordTextview"
@@ -35,14 +53,15 @@
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="24dp"
-        android:gravity="center"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/wordtext"
+        android:gravity="center"
+        android:padding="5dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/wordImageview"
+        app:layout_constraintBottom_toBottomOf="@+id/cardview"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toEndOf="@+id/wordImageview"
-        android:padding="5dp"/>
+        app:layout_constraintStart_toEndOf="@+id/cardview" />
 
     <TextView
         android:id="@+id/sentenceTextview"
@@ -56,8 +75,8 @@
         android:gravity="center"
         android:padding="5dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/wordImageview"
+        app:layout_constraintBottom_toBottomOf="@+id/cardview"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/wordImageview" />
+        app:layout_constraintStart_toEndOf="@+id/cardview" />
 </androidx.constraintlayout.widget.ConstraintLayout>
