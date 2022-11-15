@@ -11,6 +11,7 @@ import android.os.Environment
 import android.os.SystemClock
 import android.provider.MediaStore
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -38,13 +39,20 @@ class DrawingFragment:Fragment(R.layout.fragment_drawing){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
+
         Toast.makeText(requireContext(),"Lütfen resim çizdikten sonra yukarıdaki butondan kaydettikten sonra kelimeyi kaydedin",Toast.LENGTH_LONG).show()
+
 
 
         wordViewModel = ViewModelProvider(requireActivity()).get(WordViewModel::class.java)
 
         val binding = FragmentDrawingBinding.bind(view)
         fragmentBinding = binding
+
+        val buttonAnimation = AnimationUtils.loadAnimation(requireContext(), R.anim.anim)
+        binding.save.startAnimation(buttonAnimation)
 
         binding.drawingView.setBrushColor(Color.BLUE)
 
