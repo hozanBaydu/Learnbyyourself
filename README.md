@@ -139,7 +139,7 @@ interface WordDao {
 }
 ```
 
-Dao bu şekilde kodlanmıştır.Fafıza yönetimi ve verimlilik için cevaplar liveData şeklinde alınmıştır.Gelen cevaplar üzerinde herhangi bir değişiklik veya filtreleme kullanmadığım için flow kullanma gereği duymadım ama flow ile de yapılabilir.
+Dao bu şekilde kodlanmıştır.Hafıza yönetimi ve verimlilik için cevaplar liveData şeklinde alınmıştır.Gelen cevaplar üzerinde herhangi bir değişiklik veya filtreleme kullanmadığım için flow kullanma gereği duymadım ama flow ile de yapılabilir.
 
 ![giriş sayfası](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjneP-ucXHZ7tLRKgWcq7Fzq9J3R6KH9pX6xcYujLp9Gu5mvvH4KgP9mYmphX6kdnUaPfP5RgWHo-_g_G1Fey3OnpWExkzWZpMsA3CBnYjGXaGEkK65E2xJEHpz-25ZZil_9Uup6FRn_TQi6EHCRL7dOoTJ0xLS16fs0tRirByb7dILyUeoZSv4dnK-/s600/learn2.jpeg)
 
